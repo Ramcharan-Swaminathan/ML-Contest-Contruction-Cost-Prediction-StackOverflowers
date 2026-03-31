@@ -1,4 +1,4 @@
-# ML Contest Construction Cost Prediction
+# Construction Cost Prediction
 
 ## Project Overview
 This project aims to predict construction costs using machine learning algorithms. It leverages data collected from various sources, including historical project data, to provide accurate cost estimations.
@@ -75,12 +75,5 @@ ML-Contest-Contruction-Cost-Prediction-StackOverflowers/
 - **Challenge:** Overfitting of models.
   **Solution:** Use cross-validation and regularization techniques.
 
-## Future Enhancements
-- Incorporate additional features such as location data.
-- Develop a web application for user interactions.
-- Explore advanced modeling techniques, such as deep learning.
-
-## Author Information
-- **Name:** Rahul Techie
-- **GitHub:** [techieRahul17](https://github.com/techieRahul17)
-- **Email:** rahul.techie@example.com
+## Authors
+- **Names:** Keshav K S, Mehanth T, Rahul V S, Ramcharan S, Sakthivel T
