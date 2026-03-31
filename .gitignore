@@ -84,3 +84,5 @@ plots/
 *.jpeg
 
 LightGBM/
+
+EDA_try/EDA_Report.html
