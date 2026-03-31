@@ -1,0 +1,79 @@
+/home/ramcharan/ml/construction/data_clean/verify_data.py:54: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(x=ph_orig, order=risk_order, palette='Blues')
+/home/ramcharan/ml/construction/data_clean/verify_data.py:58: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(x=ph_clean, order=risk_order, palette='Greens')
+Loading data...
+
+--- Target Encoding Check ---
+Japan Encoded Geolocation Correlation with Target: 0.6381
+Philippines Encoded Geolocation Correlation with Target: 0.5755
+
+--- Imputation Check (Wind Risk) ---
+Original Value Counts:
+tropical_cyclone_wind_risk
+High         0.461707
+Moderate     0.407002
+Low          0.085339
+Very High    0.045952
+Name: proportion, dtype: float64
+
+Cleaned Value Counts:
+tropical_cyclone_wind_risk
+High         0.461707
+Moderate     0.407002
+Low          0.085339
+Very High    0.045952
+Name: proportion, dtype: float64
+
+--- Interaction Check (Japan: US CPI * is_capital) ---
+Japan Interaction Correlation: 0.4906
+
+--- Correlation Matrix (Top 5 Positive/Negative) ---
+
+Japan Top Correlations:
+construction_cost_per_m2_usd       1.000000
+geolocation_name                   0.638061
+is_capital                         0.499342
+us_cpi_x_is_capital                0.490572
+straight_distance_to_capital_km    0.023664
+us_cpi                            -0.245676
+dtype: float64
+geolocation_name                   0.638061
+is_capital                         0.499342
+us_cpi_x_is_capital                0.490572
+straight_distance_to_capital_km    0.023664
+us_cpi                            -0.245676
+dtype: float64
+
+Philippines Top Correlations:
+construction_cost_per_m2_usd       1.000000
+geolocation_name                   0.575483
+us_cpi                             0.120016
+us_cpi_x_is_capital                0.109263
+is_capital                         0.109004
+straight_distance_to_capital_km   -0.158618
+dtype: float64
+geolocation_name                   0.575483
+us_cpi                             0.120016
+us_cpi_x_is_capital                0.109263
+is_capital                         0.109004
+straight_distance_to_capital_km   -0.158618
+dtype: float64
+
+--- Outlier Scan ---
+
+Japan Stats:
+  Mean: 1830.27, Std: 309.11
+  >3 Std Limit: 2757.59
+  Outliers found: 13 (2.29%)
+
+Philippines Stats:
+  Mean: 214.82, Std: 71.98
+  >3 Std Limit: 430.76
+  Outliers found: 12 (2.63%)

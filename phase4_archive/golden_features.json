@@ -1,0 +1,23 @@
+[
+    "deflated_gdp_usd",
+    "straight_distance_to_capital_km",
+    "us_cpi",
+    "viirs_max",
+    "s2_B8A_median",
+    "s2_B5_min",
+    "seismic_hazard_zone",
+    "s2_B7_min",
+    "s2_B9_max",
+    "s2_B12_max",
+    "s2_B9_mean",
+    "s2_B11_max",
+    "s2_B4_median",
+    "s2_B11_std",
+    "s2_B1_max",
+    "s2_B8A_max",
+    "s2_B12_median",
+    "s2_B11_mean",
+    "s2_B6_std",
+    "s2_B3_min",
+    "viirs_min"
+]

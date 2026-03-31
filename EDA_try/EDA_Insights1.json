@@ -1,0 +1,104 @@
+{
+  "dataset_summary": {
+    "n_rows": 1024,
+    "n_features": 23,
+    "missing_ratio": 0.00016983695652173913
+  },
+  "target_analysis": {
+    "target": "construction_cost_per_m2_usd",
+    "mean": 1109.3114860347114,
+    "std": 837.074824908352,
+    "skewness": 0.040279462816970577,
+    "kurtosis": -1.5176240814422635
+  },
+  "top_predictors": [],
+  "data_quality_issues": {
+    "high_missing_features": [],
+    "high_skew_features": []
+  },
+  "features_to_drop": [
+    {
+      "feature": "geolocation_name",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "quarter_label",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "country",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "year",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "deflated_gdp_usd",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "us_cpi",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "developed_country",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "landlocked",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "region_economic_classification",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "access_to_airport",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "access_to_port",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "access_to_highway",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "access_to_railway",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "straight_distance_to_capital_km",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "seismic_hazard_zone",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "flood_risk_class",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "tropical_cyclone_wind_risk",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "tornadoes_wind_risk",
+      "reason": "constant_or_single_value"
+    },
+    {
+      "feature": "koppen_climate_zone",
+      "reason": "constant_or_single_value"
+    }
+  ],
+  "modeling_recommendations": [
+    "Log/Box-Cox transform skewed numerical features",
+    "Drop constant and high-missing columns",
+    "Check multicollinearity among top predictors",
+    "Start with Ridge/Lasso regression",
+    "Try tree-based regressors for non-linear effects"
+  ]
+}
